@@ -1,0 +1,19 @@
+{
+  "name": "dev-diary-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that turns a folder of Markdown files into a searchable work journal for any LLM",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "dev-diary-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "demo": "node dist/demo-client.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.23.12"
+  }
+}
