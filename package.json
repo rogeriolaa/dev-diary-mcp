@@ -15,5 +15,10 @@
   "license": "MIT",
   "devDependencies": {
     "tsx": "^4.23.12"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.4.3"
   }
 }
