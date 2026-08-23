@@ -12,6 +12,10 @@ So I flipped it: instead of me feeding a journal, why not give my assistant tool
 
 The natural fit is **MCP (Model Context Protocol)** — the standard that lets LLM clients discover and call external tools. I built `dev-diary-mcp`: a server that turns a plain folder of Markdown files into a searchable work journal. It ended up being the best-sized project I've found for *learning* MCP, because it touches every core concept (tools, schemas, stdio transport, stateless storage) while staying under 200 lines.
 
+One thing to get out of the way early: **the diary is not the point**. There are journal apps; you don't need me to build another one. I picked this subject precisely because it's small, boring, and universally understood — the ideal shape for a learning project. The real goal was to answer a question I kept asking myself: *"MCP servers seem like magic. Can anyone actually build one for anything?"*
+
+The answer, as this article will show, is yes — and once you see the whole recipe, you'll realize the hard part was never the protocol. It's deciding what to wrap. Your gym log, your reading list, your company's internal wiki, your smart home — if it can be read or written by code, it can be behind an MCP server by Friday.
+
 - 💻 Code: [github.com/rogeriolaa/dev-diary-mcp](https://github.com/rogeriolaa/dev-diary-mcp)
 
 ## What it does
