@@ -88,7 +88,11 @@ through a lossy parser.
 - The demo client now computes its dates relative to today instead of using
   hardcoded dates, and exercises `edit_entry` and `delete_entry`.
 - The README documents the correctness guarantees and no longer shows stale
-  demo output.
+  demo output. Setup instructions now lead with `npx dev-diary-mcp`, since the
+  package is published to npm.
+- The published tarball excludes the development test harness
+  (`dist/e2e-check.js`) and includes `CHANGELOG.md`, so the npm package page
+  shows the release notes.
 
 ## [1.0.0] - 2026-08-22
 

@@ -36,7 +36,23 @@ Then look at `diary/*.md` — that's your data. Plain Markdown.
 
 ## Connect it to your editor / agent
 
+The package is on npm, so the easiest setup is `npx` — no clone, no build:
+
 ### Claude Desktop / Cursor / any MCP client
+
+```json
+{
+  "mcpServers": {
+    "dev-diary": {
+      "command": "npx",
+      "args": ["-y", "dev-diary-mcp"],
+      "env": { "DIARY_DIR": "/absolute/path/to/your/diary" }
+    }
+  }
+}
+```
+
+Or from a source checkout:
 
 ```json
 {
@@ -53,7 +69,7 @@ Then look at `diary/*.md` — that's your data. Plain Markdown.
 ### Hermes Agent
 
 ```bash
-hermes mcp add dev-diary --command node --args /path/to/dist/server.js
+hermes mcp add dev-diary --command npx --args -y dev-diary-mcp
 ```
 
 ### Inspect it interactively
