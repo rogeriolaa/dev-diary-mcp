@@ -33,7 +33,8 @@
     "zod": "^4.4.3"
   },
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md"
   ],
   "repository": {
     "type": "git",
